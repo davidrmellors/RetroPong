@@ -12,15 +12,29 @@ namespace RetroPong.UserControls
 {
     public partial class SettingsControl : UserControl
     {
-        // Implement your settings controls and logic here
-        // For example, resolution dropdown, background image chooser, and music toggle switch.
+        private Button btnSaveSettings;
+        private CheckBox chkMusic;
+        // Add other settings components like resolution changer, background changer
+
+        public event EventHandler SaveSettings;
+        public event EventHandler<bool> MusicChanged;
 
         public SettingsControl()
         {
             InitializeComponent();
-            // Setup controls
+            CreateUI();
         }
 
-        // Implement methods to change settings
+        private void CreateUI()
+        {
+            chkMusic = new CheckBox { Text = "Music", Checked = true, Location = new Point(20, 20) };
+            chkMusic.CheckedChanged += (sender, e) => MusicChanged?.Invoke(this, chkMusic.Checked);
+
+            btnSaveSettings = new Button { Text = "Save Settings", Location = new Point(20, 100) };
+            btnSaveSettings.Click += (sender, e) => SaveSettings?.Invoke(this, EventArgs.Empty);
+
+            this.Controls.Add(chkMusic);
+            this.Controls.Add(btnSaveSettings);
+        }
     }
 }
