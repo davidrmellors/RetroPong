@@ -6,7 +6,7 @@ RetroPong is a modern take on the classic Pong game. This project aims to recrea
 
 - [Features](#features)
 - [Installation](#installation)
-- [Technologies Used](#technologiesused)
+- [Technologies Used](#technologies)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -19,7 +19,7 @@ RetroPong is a modern take on the classic Pong game. This project aims to recrea
 - **Score Tracking:** Keep track of your scores and compete for the highest score.
 - **Pause Menu:** Users are able to pause their game and either choose to customise the game settings or quit.
 
-## Technologies Used
+## Technologies
 - Windows Forms and User Controls
 - .NET Framework v4.8
 - C#
