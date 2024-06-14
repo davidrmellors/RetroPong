@@ -6,7 +6,7 @@ RetroPong is a modern take on the classic Pong game. This project aims to recrea
 
 - [Features](#features)
 - [Installation](#installation)
-- [Technologies Used](#technologies)
+- [Technologies Used](#technologiesused)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
